@@ -1,0 +1,4 @@
+#Ignore all files
+*.idea/
+**/algorithms-ds.iml
+**/out/
