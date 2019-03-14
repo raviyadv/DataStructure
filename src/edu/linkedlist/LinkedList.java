@@ -123,4 +123,20 @@ public class LinkedList<T> {
             return 0;
         return 1+countRecursive(currentNode.next);
     }
+
+    public static <T> LinkedList<T> createLinkedList(T[] elements){
+        LinkedList<T> linkedList=new LinkedList();
+        Node<T> currentNode=null;
+        for(T typeData:elements)
+        {
+            if(linkedList.head==null) {
+                linkedList.head = new Node<T>(typeData);
+                currentNode=linkedList.head;
+                continue;
+            }
+            currentNode.next=new Node<T>(typeData);
+            currentNode=currentNode.next;
+        }
+        return linkedList;
+    }
 }
