@@ -10,6 +10,10 @@ public class LinkedListPalindrome {
         LinkedListPalindrome palindrome = new LinkedListPalindrome();
         palindrome.head = linkedList.head;
         System.out.println(palindrome.isPalindrome(linkedList.head));
+        LinkedList<Character> linkedListReverse = LinkedList.createLinkedList(new Character[]{'1', '2', '3', '4', '5'});
+        linkedListReverse.printLinkedList();
+        linkedListReverse.head=palindrome.reverseLinkedList(linkedListReverse.head);
+        linkedListReverse.printLinkedList();
     }
 
     boolean isPalindrome(LinkedList.Node right) {
@@ -23,6 +27,21 @@ public class LinkedListPalindrome {
             isp = false;
         left = left.next;
         return isp;
+    }
+
+    public LinkedList.Node reverseLinkedList(LinkedList.Node head)
+    {
+        LinkedList.Node current=head;
+        LinkedList.Node swapedNode=head.next;
+        current.next=null;
+        LinkedList.Node nextNode;
+        while(swapedNode!=null){
+            nextNode=swapedNode.next;
+            swapedNode.next=current;
+            current=swapedNode;
+            swapedNode=nextNode;
+        }
+        return current;
     }
 
 }
