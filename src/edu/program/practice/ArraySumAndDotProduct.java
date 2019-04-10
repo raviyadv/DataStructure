@@ -25,6 +25,23 @@ public class ArraySumAndDotProduct {
                     mul[r][c] += a[r][k] * b[k][c];
             }
         }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         return mul;
     }
 
