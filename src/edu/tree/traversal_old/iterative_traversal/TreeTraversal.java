@@ -1,4 +1,4 @@
-package edu.tree.traversal.iterative_traversal;
+package edu.tree.traversal_old.iterative_traversal;
 
 import java.util.LinkedList;
 import java.util.Queue;
@@ -14,7 +14,7 @@ class Node {
     }
 }
 
-class BinaryTree {
+class BinaryTree1 {
     Node root;
 
     int treeHeight(Node node) {
@@ -41,7 +41,7 @@ class BinaryTree {
     }
 
     public static void main(String args[]) {
-        BinaryTree tree = new BinaryTree();
+        BinaryTree1 tree = new BinaryTree1();
         tree.root = new Node(1);
         tree.root.left = new Node(2);
         tree.root.right = new Node(3);

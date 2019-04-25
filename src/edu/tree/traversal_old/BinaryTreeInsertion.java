@@ -1,4 +1,4 @@
-package edu.tree;
+package edu.tree.traversal_old;
 
 import java.util.LinkedList;
 import java.util.Queue;

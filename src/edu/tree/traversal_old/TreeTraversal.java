@@ -1,4 +1,4 @@
-package edu.tree.traversal;
+package edu.tree.traversal_old;
 class Node
 {
     int data;
@@ -59,7 +59,7 @@ class BinaryTree
         tree.root.left.left= new Node(4);
         tree.root.left.right= new Node(5);
 
-    //    System.out.println("Level order traversal of binary tree is ");
+    //    System.out.println("Level order traversal_old of binary tree is ");
          tree.printLevelOrder();
     }
 

@@ -1,18 +1,18 @@
-package edu.tree;
+package edu.tree.traversal_old;
 
-public class BinaryTree {
+public class BinaryTree1 {
     Node root;
 
-    BinaryTree(int data) {
+    BinaryTree1(int data) {
         root = new Node(data);
     }
 
-    BinaryTree() {
+    BinaryTree1() {
         root = null;
     }
 
     public static void main(String[] args) {
-        BinaryTree binaryTree=new BinaryTree(1);
+        BinaryTree1 binaryTree=new BinaryTree1(1);
         Node root=binaryTree.root;
      /*   root.left=new Node(2);
         root.right=new Node(3);
